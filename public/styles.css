@@ -1,3 +1,8 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+}
+
 .content {
     display: flex;
     width: 100%;
@@ -5,6 +10,15 @@
     flex-direction: column;
 }
 
-img {
-    width: 150px;
+.gopher {
+    background-image: url(images/go-logo.png);
+    width: 250px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.gopher:hover {
+    background-image: url(images/gopher.gif);
 }

@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/gofiber/basicauth"
 	"github.com/gofiber/fiber"
 )
@@ -23,5 +25,6 @@ func main() {
 		}
 	})
 
+	fmt.Println("Application will be running on http://localhost")
 	app.Listen(80)
 }

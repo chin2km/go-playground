@@ -1,17 +1,19 @@
 # go-playground
 Trying go-lang
 
+To start the applications you have two options.
+# option 1 (only if you are a docker user)
+```
+$ docker-compose up
+```
+
+# option 2
+The long process
+
 First of all, [download](https://golang.org/dl/) and install Go
 
-`go get -u github.com/gofiber/fiber`
-`go get -u github.com/gofiber/basicauth`
+then
 
-# run
 ```
-go run server.go
-```
-
-# build
-```
-go build && ./go-playground
+$ go run main.go
 ```
