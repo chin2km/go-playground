@@ -1,6 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    position: absolute;
     font-family: "Ubuntu", sans-serif;
     text-align: center;
+    border: solid 10px black;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
 }
 
 .content {
@@ -16,7 +25,23 @@ body {
     height: 400px;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .gopher:hover {
